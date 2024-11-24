@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retrieve Data Example</title>
+</head>
+<body>
+    <h2>Select Your Preferences</h2>
+    <form action="http://localhost:8082/examples/servlets/servlet/RetrieveDataServlet" method="post">
+        <label for="city">Choose a city:</label>
+        <select id="city" name="city">
+            <option value="New York">New York</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Chicago">Chicago</option>
+            <option value="Houston">Houston</option>
+        </select>
+        <br><br>
+        
+        <label>Choose your gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
